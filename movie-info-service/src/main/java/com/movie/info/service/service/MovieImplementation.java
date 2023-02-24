@@ -42,7 +42,8 @@ public class MovieImplementation implements MovieServices {
 
 		Movie movie = repo.findById(id).get();
 		if(movie == null) {
-			throw new NoSuchElementException();
+			throw new NoSuchMovieExistsException();
+			
 		}
 		else {
 			return movie;
