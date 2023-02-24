@@ -8,7 +8,7 @@ import com.movie.info.service.models.Movie;
 @Repository
 public interface MovieRepo extends JpaRepository<Movie, Integer> {
 
-	
+	public Movie findByname(String name);
 
 	
 }

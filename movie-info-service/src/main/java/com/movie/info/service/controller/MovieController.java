@@ -60,6 +60,11 @@ public class MovieController {
 		mi.updatetMovie(movie);
 		return "Movie Updated Successfully";
 	}
+	
+	@GetMapping("getName/{name}")
+	public Movie getName(@PathVariable String name) {
+		return mi.dataByname(name);
+	}
 
 	
 }

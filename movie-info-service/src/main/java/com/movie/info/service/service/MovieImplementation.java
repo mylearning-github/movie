@@ -76,4 +76,9 @@ public class MovieImplementation implements MovieServices {
 		Movie movie2 = repo.save(movie);
 		return movie2;
 	}
+	
+	public Movie dataByname(String name) {
+		
+		return repo.findByname(name);
+	}
 }
